@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* Background color for navbar and dropdown menus */
+.navbar-custom, .navbar-custom .dropdown-menu {
+    background-color: #000000;
+}
+/* Text color for navbar and dropdown menus */
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text,
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .dropdown-item {
+    color: #92D3FE;
+}
+/* Background and text colors for current page link and links on hover and focus */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .dropdown-item:hover, 
+.navbar-custom .dropdown-item:focus {
+    background-color: #000000;
+    color: #A8E8FF;
+}
+/* Border and text colors for menu icon on small screens */
+.custom-toggler.navbar-toggler {
+    border-color: #111111;
+    color: #92D3FE;
+}
+/* Hamburger icon - use same rgb values as previous rule for stroke */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236,240,241, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+#hero {
+	position: relative;
+}
+.row #hero h1 {
+    position: absolute;
+    color: #92D3FE;
+    text-shadow: 3px 2px 5px #000000;
+    font-size: 1.5rem;
+    left: 3%;
+    right: auto;
+    bottom: 18%;
+}
+
+.row #hero h2 {
+    position:absolute;
+    color: #92D3FE;
+    text-shadow: 3px 2px 5px #000000;
+    font-size: 1.5rem;
+    left: 8%;
+    right: auto;
+    bottom: 10%;
+	font-style:italic;
+}
+
+
+@media screen and (min-width:415px){
+#hero h1 {
+    font-size: 3px;
+    bottom: 14%;
+}
+
+#hero h2 {
+	font-size: 2px;
+    bottom: 4%;
+}
+
+}
+.bakedGreats.css {
+}
